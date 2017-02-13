@@ -1,6 +1,4 @@
 
-# Part 1 - HAIL CAESAR!
-
 import string
 import random
 
@@ -66,8 +64,8 @@ def randomScrambled(wordList, n):
     returns: a scrambled string of n random words
 
     NOTE:
-    This function will ONLY work once you have completed your
-    implementation of applyShifts!
+    This function will ONLY work once 
+    implementation of applyShifts is complete!
     """
     s = randomString(wordList, n) + " "
     shifts = [(i, random.randint(0, 25)) for i in range(len(s)) if s[i-1] == ' ']
@@ -225,7 +223,7 @@ def findBestShift(wordList, text):
     
 def decryptStory():
     """
-    Using the methods you created in this problem set,
+    Using the methods above,
     decrypt the story given by the function getStoryString().
     Use the functions getStoryString and loadWords to get the
     raw data you need.
